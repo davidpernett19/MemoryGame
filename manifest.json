@@ -9,12 +9,12 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "img/soccer.png",
+      "src": "icons/BALON.jpeg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "img/soccer.png",
+      "src": "icons/BALON.jpeg",
       "sizes": "512x512",
       "type": "image/png"
     }
