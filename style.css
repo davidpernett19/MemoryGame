@@ -37,3 +37,13 @@ body {
 .front-face {
   transform: rotateY(180deg);
 }
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+
