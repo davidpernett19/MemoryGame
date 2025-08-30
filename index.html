@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Memoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2196f3">
+
+
+<body>
+  <h1>🎴 Juego de Memoria</h1>
+  
+  <!-- Tablero del juego -->
+  <div class="memory-game">
+    <!-- Par A -->
+    <div class="memory-card" data-framework="a">
+      <img class="front-face" src="img/ATM.png" alt="A">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+    <div class="memory-card" data-framework="a">
+      <img class="front-face" src="img/ATM.png" alt="A">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+
+    <!-- Par B -->
+    <div class="memory-card" data-framework="b">
+      <img class="front-face" src="img//barcelona.png" alt="B">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+    <div class="memory-card" data-framework="b">
+      <img class="front-face" src="img//barcelona.png" alt="B">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+
+    <!-- Par C -->
+    <div class="memory-card" data-framework="c">
+      <img class="front-face" src="img/liverpool.png" alt="C">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+    <div class="memory-card" data-framework="c">
+      <img class="front-face" src="img/liverpool.png" alt="C">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+
+    <!-- Par D -->
+    <div class="memory-card" data-framework="d">
+      <img class="front-face" src="img/millonarios.png" alt="D">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+    <div class="memory-card" data-framework="d">
+      <img class="front-face" src="img/millonarios.png" alt="D">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+
+    <!-- Par E -->
+    <div class="memory-card" data-framework="e">
+      <img class="front-face" src="img/NAL.png" alt="E">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+    <div class="memory-card" data-framework="e">
+      <img class="front-face" src="img/NAL.png" alt="E">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+
+    <!-- Par F -->
+    <div class="memory-card" data-framework="f">
+      <img class="front-face" src="img/santafe.png" alt="F">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+    <div class="memory-card" data-framework="f">
+      <img class="front-face" src="img/santafe.png" alt="F">
+      <img class="back-face" src="img/soccer.png" alt="Back">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(reg => console.log("Service Worker registrado:", reg.scope))
+      .catch(err => console.error("Error al registrar SW:", err));
+  }
+</script>
+
+
+</body>
+</html>
